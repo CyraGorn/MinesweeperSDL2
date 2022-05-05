@@ -12,6 +12,7 @@ extern int WIDTH;
 extern int HEIGHT;
 extern SDL_Window *window;
 extern SDL_Renderer *renderer;
+extern SDL_Texture *InitScreen;
 extern SDL_Texture *StartGameDefault, *StartGame1, *StartGame2;
 extern SDL_Texture *modeEasy, *modeMed, *modeHard, *ChooseMode;
 extern SDL_Texture *Easy, *Medium, *Hard;

@@ -4,6 +4,8 @@
 
 int main(int argc, char *argv[]) {
     if(init()) {
+        loadScreen(InitScreen,1000,800);
+        SDL_Delay(800);
         startGame(quit);
         SDL_Delay(500);
         do {

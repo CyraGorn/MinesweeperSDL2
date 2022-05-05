@@ -8,6 +8,7 @@ SDL_Renderer *renderer = NULL;
 string TITLE = "Minesweeper";
 int WIDTH = 1000;
 int HEIGHT = 800;
+SDL_Texture *InitScreen;
 SDL_Texture *StartGameDefault, *StartGame1, *StartGame2;
 SDL_Texture *modeEasy, *modeMed, *modeHard, *ChooseMode;
 SDL_Texture *Easy, *Medium, *Hard;
@@ -61,6 +62,7 @@ bool init() {
 
 bool loadImage() {
     bool success = 1;
+    InitScreen = loadTexture("images/InitScreen.png");
     StartGameDefault = loadTexture("images/startgame/StartGameDefault.png");
     StartGame1 = loadTexture("images/startgame/StartGame1.png");
     StartGame2 = loadTexture("images/startgame/StartGame2.png");
@@ -96,12 +98,15 @@ bool loadImage() {
         }
     }
     
-    // if(StartGameDefault == NULL || Easy == NULL  || Medium == NULL || Hard == NULL 
-    //     || ChooseMode == NULL || Win == NULL ||  Lose == NULL || Square == NULL 
-    //     || Flag == NULL || Mine == NULL) {
-	// 	cout << "There's something missing\n";
-	// 	success = 0;
-	// }
+    if(StartGameDefault == NULL || StartGame1 == NULL || StartGame2 == NULL
+        || InitScreen == NULL || modeEasy == NULL || modeMed == NULL || modeHard == NULL
+        || Easy == NULL  || Medium == NULL || Hard == NULL 
+        || ChooseMode == NULL || Win == NULL ||  Lose == NULL || Square == NULL 
+        || Flag == NULL || Mine == NULL || Blank == NULL
+        || continueGame == NULL || buttonContinueGame == NULL) {
+		cout << "There's something missing\n";
+		success = 0;
+	}
     return success;
 }
 
@@ -134,6 +139,10 @@ void close() {
     SDL_DestroyTexture(Medium);
     SDL_DestroyTexture(Hard);
     SDL_DestroyTexture(ChooseMode);
+    SDL_DestroyTexture(modeEasy);
+    SDL_DestroyTexture(modeMed);
+    SDL_DestroyTexture(modeHard);
+    SDL_DestroyTexture(InitScreen);
 	SDL_DestroyTexture(StartGameDefault);
     SDL_DestroyTexture(StartGame1);
     SDL_DestroyTexture(StartGame2);
@@ -141,7 +150,16 @@ void close() {
 	SDL_DestroyTexture(Lose);
     SDL_DestroyTexture(Flag);
     SDL_DestroyTexture(Square);
+    SDL_DestroyTexture(Blank);
     SDL_DestroyTexture(Mine);
+    SDL_DestroyTexture(continueGame);
+    SDL_DestroyTexture(buttonContinueGame);
+    for(int i = 0; i < 9; i++) {
+        SDL_DestroyTexture(Num[i]);
+    }
+    for(int i = 0; i < 11; i++) {
+        SDL_DestroyTexture(numMine[i]);
+    }
 	IMG_Quit();
 	SDL_Quit();
 }
