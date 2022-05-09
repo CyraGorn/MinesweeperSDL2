@@ -141,6 +141,7 @@ void showTmpMine(int countTmpMine) {
 
 bool continuePlay(bool &quit) {
     SDL_Event e;
+    loadScreen(continueGame,1000,800);
     while(!quit) {
         if(SDL_PollEvent(&e) != 0) {
             if(e.type == SDL_QUIT) {
@@ -151,15 +152,19 @@ bool continuePlay(bool &quit) {
                 int x = e.button.x;
                 int y = e.button.y;
                 if(e.type == SDL_MOUSEBUTTONDOWN) {
-                    if(x >= 319 && y >= 554 && x <= 683 && y <= 623) {
-                        return 1;
+                    if(x >= 308 && y >= 502 && x <= 676 && y <= 568) {
+                        return 1; 
+                    } else if(x >= 308 && y >= 659 && x <= 676 && y <= 725) {
+                        return 0;
                     }
-                    // cout << x << " " << y << "\n";
+                    // cout << x << " " << y << "\n"; 
                 } else if(e.type == SDL_MOUSEMOTION) {
-                    if(x >= 319 && y >= 554 && x <= 683 && y <= 623) {
-                        loadScreen(buttonContinueGame,1000,800);
+                    if(x >= 308 && y >= 502 && x <= 676 && y <= 568) {
+                        loadScreen(buttonContinueGame1,1000,800);
+                    } else if(x >= 308 && y >= 659 && x <= 676 && y <= 725) {
+                        loadScreen(buttonContinueGame2,1000,800);
                     } else {
-                        loadScreen(continueGame,1000,800);
+                        loadScreen(continueGame,1000,800);      
                     }
                 }
             }

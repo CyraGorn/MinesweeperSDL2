@@ -17,7 +17,7 @@ extern SDL_Texture *StartGameDefault, *StartGame1, *StartGame2;
 extern SDL_Texture *modeEasy, *modeMed, *modeHard, *ChooseMode;
 extern SDL_Texture *Easy, *Medium, *Hard;
 extern SDL_Texture *Flag, *Square, *Mine, *Blank;
-extern SDL_Texture *Win, *Lose, *continueGame, *buttonContinueGame;
+extern SDL_Texture *Win, *Lose, *continueGame, *buttonContinueGame1, *buttonContinueGame2;
 extern SDL_Texture *Num[9];
 extern SDL_Texture *numMine[11];
 extern bool cont;

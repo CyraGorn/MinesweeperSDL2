@@ -13,7 +13,7 @@ SDL_Texture *StartGameDefault, *StartGame1, *StartGame2;
 SDL_Texture *modeEasy, *modeMed, *modeHard, *ChooseMode;
 SDL_Texture *Easy, *Medium, *Hard;
 SDL_Texture *Flag, *Square, *Mine, *Blank;
-SDL_Texture *Win, *Lose, *continueGame, *buttonContinueGame;
+SDL_Texture *Win, *Lose, *continueGame, *buttonContinueGame1, *buttonContinueGame2;
 SDL_Texture *Num[9];
 SDL_Texture *numMine[11];
 bool cont = 0;
@@ -40,7 +40,7 @@ bool init() {
         SDL_WINDOWPOS_CENTERED,
         WIDTH,
         HEIGHT,
-        SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE
+        SDL_WINDOW_SHOWN
     );
     if(window == NULL) {
         cout << "Create window failed\n";
@@ -80,7 +80,8 @@ bool loadImage() {
     Win = loadTexture("images/endgame/Win.png");
     Lose = loadTexture("images/endgame/Lose.png");
     continueGame = loadTexture("images/endgame/ContinueGame.png");
-    buttonContinueGame = loadTexture("images/endgame/buttonContinueGame.png");
+    buttonContinueGame1 = loadTexture("images/endgame/buttonContinueGame1.png");
+    buttonContinueGame2 = loadTexture("images/endgame/buttonContinueGame2.png");
     for(int i = 0; i < 9; i++) {
         Num[i] = loadTexture("images/" + to_string(i) + ".png");
         if(Num[i] == NULL) {
@@ -103,7 +104,7 @@ bool loadImage() {
         || Easy == NULL  || Medium == NULL || Hard == NULL 
         || ChooseMode == NULL || Win == NULL ||  Lose == NULL || Square == NULL 
         || Flag == NULL || Mine == NULL || Blank == NULL
-        || continueGame == NULL || buttonContinueGame == NULL) {
+        || continueGame == NULL || buttonContinueGame1 == NULL || buttonContinueGame2 == NULL) {
 		cout << "There's something missing\n";
 		success = 0;
 	}
@@ -153,7 +154,8 @@ void close() {
     SDL_DestroyTexture(Blank);
     SDL_DestroyTexture(Mine);
     SDL_DestroyTexture(continueGame);
-    SDL_DestroyTexture(buttonContinueGame);
+    SDL_DestroyTexture(buttonContinueGame1);
+    SDL_DestroyTexture(buttonContinueGame2);
     for(int i = 0; i < 9; i++) {
         SDL_DestroyTexture(Num[i]);
     }
