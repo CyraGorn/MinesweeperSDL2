@@ -1,0 +1,424 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Phần mềm này tự do; hãy xem mã nguồn để tìm thấy điều kiện sao chép.
+# Không bảo đảm gì cả, dù khả năng bán hay khả năng làm việc dứt khoát.
+# 
+
+# Chương trình này đã được xây dụng cho i386-pc-mingw32
+ 
+
+# Cơ sở dữ liệu Make, được in ra vào Wed May 11 09:45:20 2022
+
+# Biến
+
+# tự động
+<D = $(patsubst %/,%,$(dir $<))
+# tự động
+?F = $(notdir $?)
+# tập tin tạo (từ « makefile », dòng 21)
+SRC := src
+# tập tin tạo
+MAKEFLAGS = Rrqp
+# môi trường
+VSCODE_LOG_NATIVE = false
+# tự động
+?D = $(patsubst %/,%,$(dir $?))
+# tập tin tạo (từ « makefile », dòng 51)
+INCLUDES := -Iinclude/SDL2
+# tự động
+@D = $(patsubst %/,%,$(dir $@))
+# môi trường
+HOMEDRIVE = C:
+# tự động
+@F = $(notdir $@)
+# tự động
+^D = $(patsubst %/,%,$(dir $^))
+# tập tin tạo
+CURDIR := e:/SDL2-sample-main
+# mặc định
+SHELL := sh.exe
+# tập tin tạo (từ « makefile », dòng 36)
+RM := rm -f
+# môi trường
+WINDIR = C:\Windows
+# môi trường
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# môi trường
+VBOX_MSI_INSTALL_PATH = D:\VirtualBox\
+# môi trường
+ONEDRIVE = C:\Users\ADMIN\OneDrive
+# môi trường
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# tập tin tạo (từ « makefile », dòng 1)
+MAKEFILE_LIST :=  makefile
+# môi trường
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# môi trường
+TMP = C:\Users\ADMIN\AppData\Local\Temp
+# tập tin tạo (từ « makefile », dòng 60)
+SOURCES := src/Action.cpp src/InGame.cpp src/InitGame.cpp src/main.cpp
+# tập tin tạo (từ « makefile », dòng 10)
+CXXFLAGS := -std=c++17 -Wall -Wextra -flto -g
+# môi trường
+VSCODE_VERBOSE_LOGGING = true
+# môi trường 
+
+PROGRAMW6432 = C:\Program Files
+# môi trường
+PROGRAMDATA = C:\ProgramData
+# môi trường
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b337d362-bfbd-4139-8c3a-25a3e820466a-sock
+# môi trường
+VSCODE_CWD = E:\Microsoft VS Code
+# môi trường
+PATH = C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\VMware\bin\;C:\MinGW\bin;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\Scripts;C:\Users\ADMIN\AppData\Local\Programs\Python\Python310;C:\Program Files (x86)\GnuWin32\bin;C:\OpenSSH-Win64;C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps;E:\Microsoft VS Code\bin;C:\Program Files\Microsoft\jdk-17.0.1.12-hotspot\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;;C:\Users\ADMIN\AppData\Local\Programs\Python\Python310;C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\Scripts;C:\Program Files (x86)\GnuWin32\bin;C:\Windows\System32;C:\php;E:\PHPStorm\PhpStorm 2021.3.3\bin;;C:\Users\ADMIN\AppData\Local\GitHubDesktop\bin
+# môi trường
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# môi trường
+ZES_ENABLE_SYSMAN = 1
+# tập tin tạo (từ « makefile », dòng 37)
+MD := mkdir
+# môi trường
+PROCESSOR_ARCHITECTURE = x86
+# môi trường
+USERPROFILE = C:\Users\ADMIN
+# môi trường
+ALLUSERSPROFILE = C:\ProgramData
+# tập tin tạo (từ « makefile », dòng 33)
+LIBDIRS := lib
+# môi trường
+VSCODE_LOG_STACK = false
+# môi trường
+NUMBER_OF_PROCESSORS = 8
+# môi trường
+ELECTRON_RUN_AS_NODE = 1
+# tập tin tạo (từ « makefile », dòng 27)
+LIB := lib
+# mặc định
+.FEATURES := target-specific order-only second-expansion else-if archives
+# môi trường
+PHPSTORM = E:\PHPStorm\PhpStorm 2021.3.3\bin;
+# tự động
+%F = $(notdir $%)
+# môi trường
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12304_PMZAEBDVFIVTJQYW
+# môi trường
+VSCODE_PIPE_LOGGING = true
+# môi trường
+COMPUTERNAME = DESKTOP-CM6A2I9
+# môi trường
+PROGRAMFILES = C:\Program Files (x86)
+# môi trường
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# môi trường
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# môi trường
+USERNAME = ADMIN
+# môi trường
+PUBLIC = C:\Users\Public
+# môi trường
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# môi trường
+VSCODE_CODE_CACHE_PATH = C:\Users\ADMIN\AppData\Roaming\Code\CachedData\57fd6d0195bb9b9d1b49f6da5db789060795de47
+# môi trường
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# môi trường
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# môi trường
+LOGONSERVER = \\DESKTOP-CM6A2I9
+# tập tin tạo (từ « makefile », dòng 32)
+INCLUDEDIRS := include/SDL2
+# môi trường
+ONEDRIVECONSUMER = C:\Users\ADMIN\OneDrive
+# môi trường
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# môi trường
+USERDOMAIN = DESKTOP-CM6A2I9
+# môi trường
+INTELLIJ IDEA COMMUNITY EDITION = C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin;
+# mặc định
+MAKE = $(MAKE_COMMAND)
+# mặc định
+MAKECMDGOALS := all
+# môi trường
+JAVA_HOME = C:\Program Files\Microsoft\jdk-17.0.1.12-hotspot\
+# mặc định
+MAKE_VERSION := 3.81
+# tập tin tạo
+.DEFAULT_GOAL := all
+# tập tin tạo (từ « makefile », dòng 24)
+INCLUDE := include
+# tập tin tạo (từ « makefile », dòng 31)
+SOURCEDIRS := src
+# môi trường
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# tự động
+%D = $(patsubst %/,%,$(dir $%))
+# tập tin tạo (từ « makefile », dòng 15)
+LFLAGS := -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
+# môi trường
+LOCALAPPDATA = C:\Users\ADMIN\AppData\Local
+# môi trường
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# mặc định
+MAKE_COMMAND := make.exe
+# môi trường
+PROCESSOR_ARCHITEW6432 = AMD64
+# mặc định
+.VARIABLES := 
+# tự động
+*F = $(notdir $*)
+# môi trường
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# môi trường
+OS = Windows_NT
+# môi trường
+VSCODE_IPC_HOOK = \\.\pipe\f064d9ba3e130212370d733ca8e40496-1.67.0-main-sock
+# môi trường
+HOMEPATH = \Users\ADMIN
+# môi trường
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# môi trường
+PROMPT = $P$G
+# môi trường
+MFLAGS = -Rrqp
+# tự động
+*D = $(patsubst %/,%,$(dir $*))
+# tập tin tạo (từ « makefile », dòng 30)
+MAIN := main.exe 
+# môi trường
+SYSTEMROOT = C:\Windows
+# tự động
++D = $(patsubst %/,%,$(dir $+))
+# tự động
++F = $(notdir $+)
+# môi trường
+APPDATA = C:\Users\ADMIN\AppData\Roaming
+# môi trường
+TEMP = C:\Users\ADMIN\AppData\Local\Temp
+# môi trường
+COMSPEC = C:\Windows\system32\cmd.exe
+# tập tin tạo (từ « makefile », dòng 18)
+OUTPUT := output
+# mặc định
+MAKEFILES := 
+# tự động
+<F = $(notdir $<)
+# tập tin tạo (từ « makefile », dòng 7)
+CXX := g++
+# môi trường
+LC_ALL = C
+# tập tin tạo (từ « makefile », dòng 54)
+LIBS := -Llib
+# tự động
+^F = $(notdir $^)
+# mặc định
+SUFFIXES := 
+# môi trường
+SYSTEMDRIVE = C:
+# môi trường
+SESSIONNAME = Console
+# môi trường
+PROCESSOR_REVISION = 8c01
+# môi trường
+MAKELEVEL := 0
+# tập tin tạo (từ « makefile », dòng 64)
+OBJECTS := src/Action.o src/InGame.o src/InitGame.o src/main.o
+# môi trường
+LANG = C
+# môi trường
+PROCESSOR_LEVEL = 6
+# môi trường
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# môi trường
+VSCODE_PID = 12304
+# môi trường
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-CM6A2I9
+# thống kê bảng băm lập biến:
+# Trọng tải=111/1024=11%, Băm lại=0, Xung đột=11/144=8%
+
+# Giá trị biến đặc trưng cho mẫu
+
+# Không có giá trị biến đặc trưng cho mẫu
+
+# Thư mục
+
+# : không thể lấy các thông tin về nó.
+# C:\Program Files\Common Files\Oracle\Java\javapath (khóa C:/Program Files/Common Files/Oracle/Java/javapath, giờ_m 1650337154): 6 tập tin, kh�ng điều không thể.
+# C:\OpenSSH-Win64 (khóa C:/OpenSSH-Win64, giờ_m 1649491100): 27 tập tin, kh�ng điều không thể.
+# C:\Users\ADMIN\AppData\Local\GitHubDesktop\bin (khóa C:/Users/ADMIN/AppData/Local/GitHubDesktop/bin, giờ_m 1651685382): 4 tập tin, kh�ng điều không thể.
+# C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps (khóa C:/Users/ADMIN/AppData/Local/Microsoft/WindowsApps, giờ_m 1651499197): 11 tập tin, kh�ng điều không thể.
+# . (khóa e:/SDL2-sample-main, giờ_m 1652088157): 19 tập tin, kh�ng điều không thể.
+# C:\php (khóa C:/php, giờ_m 1649060979): 39 tập tin, kh�ng điều không thể.
+# C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin (khóa C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2021.3.2/bin, giờ_m 1646029721): 32 tập tin, kh�ng điều không thể.
+# E:\Microsoft VS Code\bin (khóa E:/Microsoft VS Code/bin, giờ_m 1651801712): 4 tập tin, kh�ng điều không thể.
+# C:\MinGW\bin (khóa C:/MinGW/bin, giờ_m 1641289350): 144 tập tin, kh�ng điều không thể.
+# E:\PHPStorm\PhpStorm 2021.3.3\bin: không thể lấy các thông tin về nó.
+# C:\Program Files\PuTTY\ (khóa C:/Program Files/PuTTY/, giờ_m 1645944314): 12 tập tin, kh�ng điều không thể.
+# C:\Users\ADMIN\AppData\Local\Programs\Python\Python310 (khóa C:/Users/ADMIN/AppData/Local/Programs/Python/Python310, giờ_m 1644202404): 23 tập tin, kh�ng điều không thể.
+# C:\Program Files\Microsoft\jdk-17.0.1.12-hotspot\bin (khóa C:/Program Files/Microsoft/jdk-17.0.1.12-hotspot/bin, giờ_m 1642390858): 123 tập tin, kh�ng điều không thể.
+# C:\Program Files (x86)\VMware\bin\ (khóa C:/Program Files (x86)/VMware/bin/, giờ_m 1648731658): 4 tập tin, kh�ng điều không thể.
+# src (khóa e:/SDL2-sample-main/src, giờ_m 1652088132): 13 tập tin, kh�ng điều không thể.
+# C:\Program Files\Git\cmd (khóa C:/Program Files/Git/cmd, giờ_m 1646030800): 8 tập tin, kh�ng điều không thể.
+# C:\Windows\System32 (khóa C:/Windows/System32, giờ_m 1651813207): 2962 tập tin, kh�ng điều không thể.
+# C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\Scripts (k 
+hóa C:/Users/ADMIN/AppData/Local/Programs/Python/Python310/Scripts, giờ_m 1647180013): 42 tập tin, kh�ng điều không thể.
+# C:\Program Files (x86)\GnuWin32\bin (khóa C:/Program Files (x86)/GnuWin32/bin, giờ_m 1646725173): 5 tập tin, kh�ng điều không thể.
+
+# 3478 tập tin, kh�ng điều không thể trong 20 thư mục.
+
+# Quy tắc ngầm
+
+# Không có quy tắc ngầm.
+
+# Tập tin
+
+all: main.exe
+# Đích dòng lệnh.
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Cuống mẫu ngầm/tĩnh: «  »
+# Tập tin không tồn tại.
+# Tập tin đã được cập nhật.
+# Cần thiết cập nhật (« -q » đã lập).
+# tự động
+# @ := all
+# tự động
+# % := 
+# tự động
+# * := 
+# tự động
+# + := main.exe
+# tự động
+# | := 
+# tự động
+# < := main.exe
+# tự động
+# ^ := main.exe
+# tự động
+# ? := main.exe
+# thống kê bảng băm lập biến:
+# Trọng tải=8/32=25%, Băm lại=0, Xung đột=1/10=10%
+# các lệnh cần thi hành (từ « makefile », dòng 75):
+	@echo Executing 'all' complete!
+	
+
+# Không phải là đĩch:
+src/main.o:
+# Mới tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-05 09:39:26
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+
+.PHONY: clean
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Chưa bao giờ kiểm tra giờ sửa đổi.
+# Tập tin chưa được cập nhật.
+
+# Không phải là đĩch:
+.DEFAULT:
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Chưa bao giờ kiểm tra giờ sửa đổi.
+# Tập tin chưa được cập nhật.
+
+main.exe: src/Action.o src/InGame.o src/InitGame.o src/main.o
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-09 16:22:13
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+# các lệnh cần thi hành (từ « makefile », dòng 81):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(LIBS) -o $(MAIN) $(OBJECTS) $(LFLAGS)
+	
+
+# Không phải là đĩch:
+src/InGame.o:
+# Mới tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-05 10:19:08
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+
+# Không phải là đĩch:
+makefile:
+# Mới tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-11 09:45:12
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+
+# Không phải là đĩch:
+.SUFFIXES:
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Chưa bao giờ kiểm tra giờ sửa đổi.
+# Tập tin chưa được cập nhật.
+
+run: all
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Chưa bao giờ kiểm tra giờ sửa đổi.
+# Tập tin chưa được cập 
+ nhật.
+# các lệnh cần thi hành (từ « makefile », dòng 98):
+	./$(MAIN)
+	@echo Executing 'run: all' complete!
+	
+
+.cpp.o:
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Chưa bao giờ kiểm tra giờ sửa đổi.
+# Tập tin chưa được cập nhật.
+# các lệnh cần thi hành (từ « makefile », dòng 88):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+	
+
+clean:
+# Đích giả (điều kiện tiên quyết của .PHONY).
+# Chưa tìm kiếm kiểu quy tắc ngầm.
+# Tập tin không tồn tại.
+# Tập tin chưa được cập nhật.
+# các lệnh cần thi hành (từ « makefile », dòng 93):
+	$(RM) $(SRC)/*.o
+	$(RM) $(MAIN)
+	@echo Cleanup complete!
+	
+
+# Không phải là đĩch:
+src/InitGame.o:
+# Mới tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-09 16:22:12
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+
+# Không phải là đĩch:
+src/Action.o:
+# Mới tìm kiếm kiểu quy tắc ngầm.
+# Sửa đổi cuối cùng 2022-05-09 16:19:37
+# Tập tin đã được cập nhật.
+# Đã được cập nhật.
+# thống kê bảng băm lập biến:
+# Trọng tải=0/32=0%, Băm lại=0, Xung đột=0/0=0%
+
+# thống kê bảng băm các tập tin:
+# Trọng tải=13/1024=1%, Băm lại=0, Xung đột=0/33=0%
+# Đường dẫn tìm kiếm VPATH
+
+# Không có đường dẫn tìm kiếm VPATH nào
+
+# Không có đường dẫn tìm kiếm chung 
+ (biến « VPATH »).
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Mới xong cơ sở dữ liệu Make vào Wed May 11 09:45:20 2022
+
+ 

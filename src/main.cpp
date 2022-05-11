@@ -4,17 +4,13 @@
 
 int main(int argc, char *argv[]) {
     if(init()) {
-        loadScreen(InitScreen,1000,800);
-        SDL_Delay(800);
         startGame(quit);
-        SDL_Delay(500);
         do {
             bool lose = false;
             InGame ig;
             cont = 0;
             mode = 0;
             humanChooseMode(quit,mode);
-            SDL_Delay(500);
             ig.initialize(mode);
 			while(!quit) {
                 showTmpMine(countTmpMine);
@@ -23,11 +19,8 @@ int main(int argc, char *argv[]) {
                 humanInput(quit,chooseRow,chooseCol);
                 ig.handleGame(chooseRow,chooseCol,quit,lose);
                 showTmpMine(countTmpMine);
-                if(lose) {
-                    break;
-                }
-                if(ig.getMine() == 0){
-                    SDL_Delay(1000);
+                if(lose || ig.getMine() == 0) {
+                    SDL_Delay(500);
                     break;
                 }
 			}
@@ -36,10 +29,12 @@ int main(int argc, char *argv[]) {
                     ig.printAll();
                     SDL_Delay(500);
                     loadScreen(Lose,1000,800);
+                    Mix_PlayChannel(-1,Failed,0);
                     SDL_Delay(1000);
                 } else {
                     loadScreen(Win,1000,800);
-                    SDL_Delay(1000);
+                    Mix_PlayChannel(-1,Succeeded,0);
+                    SDL_Delay(2000);
                 }
                 cont = continuePlay(quit);
             }

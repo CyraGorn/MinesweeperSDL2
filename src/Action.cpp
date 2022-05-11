@@ -40,10 +40,13 @@ void humanInput(bool &quit, int &chooseRow, int &chooseCol) {
 int calcMode(int x, int y) { 
     if(x >= 299 && x <= 702) {
         if(y >= 151 && y <= 245) {
+            Mix_PlayChannel(-1,Button,0);
             return 1;
         } else if(y >= 351 && y <= 446) {
+            Mix_PlayChannel(-1,Button,0);
             return 2;
         } else if(y >= 571 && y <= 663) {
+            Mix_PlayChannel(-1,Button,0);
             return 3;
         } else {
             return 0;
@@ -78,9 +81,12 @@ void humanChooseMode(bool &quit, int &mode) {
             }
         }
     }
+    SDL_Delay(500);
 }
 
 void startGame(bool &quit) {
+    loadScreen(InitScreen,1000,800);
+    SDL_Delay(800);
     SDL_Event e;
     while(!quit) {
         if(SDL_PollEvent(&e) != 0) {
@@ -92,9 +98,13 @@ void startGame(bool &quit) {
                 int x = e.button.x;
                 int y = e.button.y;
                 if(x >= 322 && y >= 329 && x <= 677 && y <= 429) {
+                    Mix_PlayChannel(-1,Button,0);
+                    SDL_Delay(500);
                     return;
                 } else if(x >= 338 && y >= 506 && x <= 654 && y <= 624) {
                     quit = 1;
+                    Mix_PlayChannel(-1,Button,0);
+                    SDL_Delay(200);
                     close();
                     exit(0);
                 }
@@ -153,8 +163,12 @@ bool continuePlay(bool &quit) {
                 int y = e.button.y;
                 if(e.type == SDL_MOUSEBUTTONDOWN) {
                     if(x >= 308 && y >= 502 && x <= 676 && y <= 568) {
+                        Mix_PlayChannel(-1,Button,0);
+                        SDL_Delay(200);
                         return 1; 
                     } else if(x >= 308 && y >= 659 && x <= 676 && y <= 725) {
+                        Mix_PlayChannel(-1,Button,0);
+                        SDL_Delay(200);
                         return 0;
                     }
                     // cout << x << " " << y << "\n"; 

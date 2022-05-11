@@ -214,12 +214,15 @@ void InGame::handleGame(int chooseRow, int chooseCol, bool &quit, bool &lose) {
             return;
         }
         if(choice == 1 && checkValid(chooseRow,chooseCol)) {
+            Mix_PlayChannel(-1,ClickLeft,0);
             if(checkMine(chooseRow,chooseCol)) {
+                Mix_PlayChannel(-1,Boom,0);
                 lose = true;
                 return;
             } else if(!checkFlagRightPos(chooseRow,chooseCol) && checkNum(chooseRow,chooseCol) 
                 && countFlag(chooseRow,chooseCol) == countMine(chooseRow,chooseCol)) {
                 lose = true;
+                Mix_PlayChannel(-1,Boom,0);
                 return;
             } else if(checkFlagRightPos(chooseRow,chooseCol) && checkNum(chooseRow,chooseCol) 
                 && countFlag(chooseRow,chooseCol) == countMine(chooseRow,chooseCol)) {
@@ -228,6 +231,7 @@ void InGame::handleGame(int chooseRow, int chooseCol, bool &quit, bool &lose) {
                 openFieldEmpty(chooseRow,chooseCol);
             }
         } else if(choice == 2 && checkValid(chooseRow,chooseCol)) {
+            Mix_PlayChannel(-1,ClickRight,0);
             setFlag(chooseRow,chooseCol);
         }
     }

@@ -16,6 +16,12 @@ SDL_Texture *Flag, *Square, *Mine, *Blank;
 SDL_Texture *Win, *Lose, *continueGame, *buttonContinueGame1, *buttonContinueGame2;
 SDL_Texture *Num[9];
 SDL_Texture *numMine[11];
+Mix_Chunk *Boom;
+Mix_Chunk *Failed;
+Mix_Chunk *Succeeded;
+Mix_Chunk *Button;
+Mix_Chunk *ClickLeft;
+Mix_Chunk *ClickRight;
 bool cont = 0;
 bool quit = 0;
 int mode = 0;
@@ -30,9 +36,10 @@ int Column = 0;
 int countTmpMine = 0;
 
 bool init() {
+    bool success = 1;
     if(SDL_Init(SDL_INIT_EVERYTHING) != 0) {
         cout << "Initialize error\n";
-        return 0;
+        success = 0;
     }
     window = SDL_CreateWindow(
         TITLE.c_str(),
@@ -44,17 +51,39 @@ bool init() {
     );
     if(window == NULL) {
         cout << "Create window failed\n";
-        return 0;
+        success = 0;
     } else {
         renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED);
         if(renderer == NULL) {
             cout << "Renderer create failed\n";
-            return 0;
+            success = 0;
         }
         SDL_RenderSetLogicalSize(renderer,WIDTH,HEIGHT);
     }
+    if(Mix_OpenAudio(22050,MIX_DEFAULT_FORMAT,2,4096) == -1) {
+        cout << "Audio initialize failed\n";
+        success = 0;
+    }
     if(!loadImage()) {
         cout << "Load image failed\n";
+        success = 0;
+    }
+    if(!loadAudio()) {
+        cout << "Load audio failed\n";
+        success = 0;
+    }
+    return success;
+}
+
+bool loadAudio() {
+    Boom = Mix_LoadWAV("audio/boom.wav");
+    Failed = Mix_LoadWAV("audio/lose.wav");
+    Succeeded = Mix_LoadWAV("audio/win.wav");
+    Button = Mix_LoadWAV("audio/button.wav");
+    ClickLeft = Mix_LoadWAV("audio/clickleft.wav");
+    ClickRight = Mix_LoadWAV("audio/clickright.wav");
+    if(Boom == NULL || Failed == NULL || Succeeded == NULL 
+        || Button == NULL || ClickLeft == NULL || ClickRight == NULL) {
         return 0;
     }
     return 1;

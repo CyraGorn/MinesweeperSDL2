@@ -4,6 +4,7 @@
 #include<SDL.h>
 #include<SDL_image.h>
 #include<SDL_events.h>
+#include<SDL_mixer.h>
 #include<iostream>
 using namespace std;
 
@@ -32,10 +33,17 @@ extern int stepY;
 extern int Row;
 extern int Column;
 extern int countTmpMine;
+extern Mix_Chunk *Boom;
+extern Mix_Chunk *Failed;
+extern Mix_Chunk *Succeeded;
+extern Mix_Chunk *Button;
+extern Mix_Chunk *ClickLeft;
+extern Mix_Chunk *ClickRight;
 
 SDL_Texture *loadTexture(string path);
 bool init();
 bool loadImage();
+bool loadAudio();
 void loadScreen(SDL_Texture *img, int width, int height);
 void renderTexture(SDL_Texture *img, int startX, int startY, int width, int height);
 void close();
