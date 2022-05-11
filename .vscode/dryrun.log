@@ -1,7 +1,9 @@
-make.exe --dry-run --keep-going --print-directory
+make.exe --dry-run --always-make --keep-going --print-directory
 make.exe: Đang vào thư mục « e:/SDL2-sample-main »
+g++ -std=c++17 -Wall -Wextra -flto -g -Iinclude/SDL2 -c src/Action.cpp -o src/Action.o
+g++ -std=c++17 -Wall -Wextra -flto -g -Iinclude/SDL2 -c src/InGame.cpp -o src/InGame.o
 g++ -std=c++17 -Wall -Wextra -flto -g -Iinclude/SDL2 -c src/InitGame.cpp -o src/InitGame.o
- 
+g++ -std=c++17 -Wall -Wextra -flto -g -Iinclude/SDL2 -c src/main.cpp -o src/main.o
 g++ -std=c++17 -Wall -Wextra -flto -g -Iinclude/SDL2 -Llib -o main.exe  src/Action.o src/InGame.o src/InitGame.o src/main.o -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_mixer
 echo Executing 'all' complete!
 make.exe: Đang rời khỏi thư mục « e:/SDL2-sample-main »

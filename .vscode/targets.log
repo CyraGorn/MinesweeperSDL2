@@ -6,9 +6,8 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # 
 
 # Chương trình này đã được xây dụng cho i386-pc-mingw32
- 
 
-# Cơ sở dữ liệu Make, được in ra vào Wed May 11 09:45:20 2022
+# Cơ sở dữ liệu Make, được in ra vào Wed May 11 20:56:27 2022
 
 # Biến
 
@@ -62,13 +61,12 @@ SOURCES := src/Action.cpp src/InGame.cpp src/InitGame.cpp src/main.cpp
 CXXFLAGS := -std=c++17 -Wall -Wextra -flto -g
 # môi trường
 VSCODE_VERBOSE_LOGGING = true
-# môi trường 
-
+# môi trường
 PROGRAMW6432 = C:\Program Files
 # môi trường
 PROGRAMDATA = C:\ProgramData
 # môi trường
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-b337d362-bfbd-4139-8c3a-25a3e820466a-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-8ec5036f-6791-43de-855f-d6f5c8be8ddb-sock
 # môi trường
 VSCODE_CWD = E:\Microsoft VS Code
 # môi trường
@@ -102,7 +100,7 @@ PHPSTORM = E:\PHPStorm\PhpStorm 2021.3.3\bin;
 # tự động
 %F = $(notdir $%)
 # môi trường
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12304_PMZAEBDVFIVTJQYW
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14520_SUTDJQNGWRAQCYYJ
 # môi trường
 VSCODE_PIPE_LOGGING = true
 # môi trường
@@ -120,9 +118,9 @@ PUBLIC = C:\Users\Public
 # môi trường
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # môi trường
-VSCODE_CODE_CACHE_PATH = C:\Users\ADMIN\AppData\Roaming\Code\CachedData\57fd6d0195bb9b9d1b49f6da5db789060795de47
+VSCODE_CODE_CACHE_PATH = C:\Users\ADMIN\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
 # môi trường
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # môi trường
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # môi trường
@@ -174,7 +172,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
 # môi trường
 OS = Windows_NT
 # môi trường
-VSCODE_IPC_HOOK = \\.\pipe\f064d9ba3e130212370d733ca8e40496-1.67.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\f064d9ba3e130212370d733ca8e40496-1.67.1-main-sock
 # môi trường
 HOMEPATH = \Users\ADMIN
 # môi trường
@@ -195,6 +193,8 @@ SYSTEMROOT = C:\Windows
 +F = $(notdir $+)
 # môi trường
 APPDATA = C:\Users\ADMIN\AppData\Roaming
+# môi trường
+__COMPAT_LAYER = DetectorsAppHealth
 # môi trường
 TEMP = C:\Users\ADMIN\AppData\Local\Temp
 # môi trường
@@ -232,11 +232,11 @@ PROCESSOR_LEVEL = 6
 # môi trường
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # môi trường
-VSCODE_PID = 12304
+VSCODE_PID = 14520
 # môi trường
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-CM6A2I9
 # thống kê bảng băm lập biến:
-# Trọng tải=111/1024=11%, Băm lại=0, Xung đột=11/144=8%
+# Trọng tải=112/1024=11%, Băm lại=0, Xung đột=11/145=8%
 
 # Giá trị biến đặc trưng cho mẫu
 
@@ -249,24 +249,23 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-CM6A2I9
 # C:\OpenSSH-Win64 (khóa C:/OpenSSH-Win64, giờ_m 1649491100): 27 tập tin, kh�ng điều không thể.
 # C:\Users\ADMIN\AppData\Local\GitHubDesktop\bin (khóa C:/Users/ADMIN/AppData/Local/GitHubDesktop/bin, giờ_m 1651685382): 4 tập tin, kh�ng điều không thể.
 # C:\Users\ADMIN\AppData\Local\Microsoft\WindowsApps (khóa C:/Users/ADMIN/AppData/Local/Microsoft/WindowsApps, giờ_m 1651499197): 11 tập tin, kh�ng điều không thể.
-# . (khóa e:/SDL2-sample-main, giờ_m 1652088157): 19 tập tin, kh�ng điều không thể.
+# . (khóa e:/SDL2-sample-main, giờ_m 1652240351): 21 tập tin, kh�ng điều không thể.
 # C:\php (khóa C:/php, giờ_m 1649060979): 39 tập tin, kh�ng điều không thể.
 # C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.3.2\bin (khóa C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2021.3.2/bin, giờ_m 1646029721): 32 tập tin, kh�ng điều không thể.
-# E:\Microsoft VS Code\bin (khóa E:/Microsoft VS Code/bin, giờ_m 1651801712): 4 tập tin, kh�ng điều không thể.
+# E:\Microsoft VS Code\bin (khóa E:/Microsoft VS Code/bin, giờ_m 1652236211): 4 tập tin, kh�ng điều không thể.
 # C:\MinGW\bin (khóa C:/MinGW/bin, giờ_m 1641289350): 144 tập tin, kh�ng điều không thể.
 # E:\PHPStorm\PhpStorm 2021.3.3\bin: không thể lấy các thông tin về nó.
 # C:\Program Files\PuTTY\ (khóa C:/Program Files/PuTTY/, giờ_m 1645944314): 12 tập tin, kh�ng điều không thể.
 # C:\Users\ADMIN\AppData\Local\Programs\Python\Python310 (khóa C:/Users/ADMIN/AppData/Local/Programs/Python/Python310, giờ_m 1644202404): 23 tập tin, kh�ng điều không thể.
 # C:\Program Files\Microsoft\jdk-17.0.1.12-hotspot\bin (khóa C:/Program Files/Microsoft/jdk-17.0.1.12-hotspot/bin, giờ_m 1642390858): 123 tập tin, kh�ng điều không thể.
 # C:\Program Files (x86)\VMware\bin\ (khóa C:/Program Files (x86)/VMware/bin/, giờ_m 1648731658): 4 tập tin, kh�ng điều không thể.
-# src (khóa e:/SDL2-sample-main/src, giờ_m 1652088132): 13 tập tin, kh�ng điều không thể.
+# src (khóa e:/SDL2-sample-main/src, giờ_m 1652240351): 13 tập tin, kh�ng điều không thể.
 # C:\Program Files\Git\cmd (khóa C:/Program Files/Git/cmd, giờ_m 1646030800): 8 tập tin, kh�ng điều không thể.
 # C:\Windows\System32 (khóa C:/Windows/System32, giờ_m 1651813207): 2962 tập tin, kh�ng điều không thể.
-# C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\Scripts (k 
-hóa C:/Users/ADMIN/AppData/Local/Programs/Python/Python310/Scripts, giờ_m 1647180013): 42 tập tin, kh�ng điều không thể.
+# C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\Scripts (khóa C:/Users/ADMIN/AppData/Local/Programs/Python/Python310/Scripts, giờ_m 1647180013): 42 tập tin, kh�ng điều không thể.
 # C:\Program Files (x86)\GnuWin32\bin (khóa C:/Program Files (x86)/GnuWin32/bin, giờ_m 1646725173): 5 tập tin, kh�ng điều không thể.
 
-# 3478 tập tin, kh�ng điều không thể trong 20 thư mục.
+# 3480 tập tin, kh�ng điều không thể trong 20 thư mục.
 
 # Quy tắc ngầm
 
@@ -306,7 +305,7 @@ all: main.exe
 # Không phải là đĩch:
 src/main.o:
 # Mới tìm kiếm kiểu quy tắc ngầm.
-# Sửa đổi cuối cùng 2022-05-05 09:39:26
+# Sửa đổi cuối cùng 2022-05-11 10:33:28
 # Tập tin đã được cập nhật.
 # Đã được cập nhật.
 # thống kê bảng băm lập biến:
@@ -325,7 +324,7 @@ src/main.o:
 
 main.exe: src/Action.o src/InGame.o src/InitGame.o src/main.o
 # Chưa tìm kiếm kiểu quy tắc ngầm.
-# Sửa đổi cuối cùng 2022-05-09 16:22:13
+# Sửa đổi cuối cùng 2022-05-11 10:39:12
 # Tập tin đã được cập nhật.
 # Đã được cập nhật.
 # thống kê bảng băm lập biến:
@@ -337,7 +336,7 @@ main.exe: src/Action.o src/InGame.o src/InitGame.o src/main.o
 # Không phải là đĩch:
 src/InGame.o:
 # Mới tìm kiếm kiểu quy tắc ngầm.
-# Sửa đổi cuối cùng 2022-05-05 10:19:08
+# Sửa đổi cuối cùng 2022-05-11 10:33:27
 # Tập tin đã được cập nhật.
 # Đã được cập nhật.
 # thống kê bảng băm lập biến:
@@ -361,8 +360,7 @@ makefile:
 run: all
 # Chưa tìm kiếm kiểu quy tắc ngầm.
 # Chưa bao giờ kiểm tra giờ sửa đổi.
-# Tập tin chưa được cập 
- nhật.
+# Tập tin chưa được cập nhật.
 # các lệnh cần thi hành (từ « makefile », dòng 98):
 	./$(MAIN)
 	@echo Executing 'run: all' complete!
@@ -390,7 +388,7 @@ clean:
 # Không phải là đĩch:
 src/InitGame.o:
 # Mới tìm kiếm kiểu quy tắc ngầm.
-# Sửa đổi cuối cùng 2022-05-09 16:22:12
+# Sửa đổi cuối cùng 2022-05-11 10:36:09
 # Tập tin đã được cập nhật.
 # Đã được cập nhật.
 # thống kê bảng băm lập biến:
@@ -399,7 +397,7 @@ src/InitGame.o:
 # Không phải là đĩch:
 src/Action.o:
 # Mới tìm kiếm kiểu quy tắc ngầm.
-# Sửa đổi cuối cùng 2022-05-09 16:19:37
+# Sửa đổi cuối cùng 2022-05-11 10:39:11
 # Tập tin đã được cập nhật.
 # Đã được cập nhật.
 # thống kê bảng băm lập biến:
@@ -411,14 +409,13 @@ src/Action.o:
 
 # Không có đường dẫn tìm kiếm VPATH nào
 
-# Không có đường dẫn tìm kiếm chung 
- (biến « VPATH »).
+# Không có đường dẫn tìm kiếm chung (biến « VPATH »).
 
 # # of strings in strcache: 1
 # # of strcache buffers: 1
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Mới xong cơ sở dữ liệu Make vào Wed May 11 09:45:20 2022
+# Mới xong cơ sở dữ liệu Make vào Wed May 11 20:56:27 2022
 
  

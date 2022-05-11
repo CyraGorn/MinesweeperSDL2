@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
                 humanInput(quit,chooseRow,chooseCol);
                 ig.handleGame(chooseRow,chooseCol,quit,lose);
                 showTmpMine(countTmpMine);
-                if(lose || ig.getMine() == 0) {
+                if(lose || (ig.getMine() == 0 && countTmpMine == 0)) {
                     SDL_Delay(500);
                     break;
                 }
