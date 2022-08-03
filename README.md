@@ -7,7 +7,7 @@ Simple minesweeper game in SDL2 (C/C++)
 #### - In "System variables" zone, click on "Path" then "Edit".
 #### - Choose "New" then copy the bin file of MinGW and MakeGNU paths to two new lines. And click OK to save.
 ### 3. Download the repository.    
-### 4. Open this repository's folder with vscode. Go to settings, search for "Run in Terminal" and tick the box. Press `Ctrl + Shift + ~` to open Terminal. Type `make run` to play this game.    
+### 4. Open this repository's folder with vscode. Go to settings, search for "Run in Terminal" and tick the box. Press `Ctrl + Shift + ~` to open Terminal. Type `make run` to play the game. (Or all you have to do is just open main.exe =)))
 # How to play
 Left click to open the square, right click to set or unset flag.
 When you open the square which has a mine, you lose the game. If you set all the flag on right positions, you win the game. 
